@@ -6,10 +6,41 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Sign In Template</title>
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+<style>
+   html,body{
+      height: 100%;
+   }
+   .loginForm{
+      width: 330px;
+      margin: auto;
+      padding: 15px;
+   }
+   img{
+      border-radius: 5px;
+   }
+   #inputEmail{
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+   }
+   #inputPassword{
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+   }
+</style>
 </head>
-<body>
-   <form action="">
+<body class="d-flex align-items-center text-center">
+   <form action="" class="loginForm">
       <img src="004.jpg" alt="" width="72" height="72">
+      <h3 class="font-weight-normal mt-4 mb-3">Please Log In</h3>
+      <input type="email" id="inputEmail" class="form-control" placeholder="Email Address" require>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Password" require>
+      <div class="custom-control custom-checkbox">
+         <input type="checkbox" class="custom-control-checkbox my-3">
+         <label for="" class="custom-cotrol-label">Remember me?</label>
+      </div>
+      <button type="submit" class="btn btn-block btn-primary">Sign In</button>
+      <p class="mt-4 font-muted">&copy; 2020 - 2030</p>
    </form>
 </body>
 </html>
